@@ -1,0 +1,74 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.Amazon.com</groupId>
+  <artifactId>com.Amazon.com</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+  <!-- Plugins - To Control/Manage the project, or some configuration-->
+ <build>
+    <pluginManagement>
+      <plugins>
+        
+        <!-- Importing compiler jar to execute compiler goal for maven build lifecycle -->
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>3.8.1</version>
+          <configuration>
+            <!-- put your configurations here -->
+          </configuration>
+        </plugin>
+        
+        <!-- Importing surefire jar to execute surefire goal for maven build lifecycle 
+        Important for Running TESTS-->
+        <plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+	    	<artifactId>maven-surefire-plugin</artifactId>
+	    	<version>2.22.0</version>
+	    	<!--Links Maven to TEST NG xml -->
+	    	<configuration>
+	    	<suiteXmlFiles>testng.xml</suiteXmlFiles>
+	    	</configuration>
+		</plugin>
+        
+      </plugins>   
+    </pluginManagement>
+ </build>
+  
+  <!-- Dependencies - Downloads all JAR file, related classes and methods-->
+  <dependencies>
+ 
+		<!-- Downloads all webdriver chrome,firefox etc-->
+		<dependency>
+		    <groupId>org.seleniumhq.selenium</groupId>
+		    <artifactId>selenium-java</artifactId>
+		    <version>3.7.0</version>
+		</dependency>
+		 
+		  <!-- WebDriverManager.chromedriver().setup(); WebDriverManager does magic for you:
+		    No need to download browser specific drivers and setup the path for the same in system.setproperties
+			It checks the version of the browser installed in your machine (e.g. Chrome, Firefox).
+			It matches the version of the driver (e.g. chromedriver, geckodriver). If unknown, it uses the latest version of the driver.
+			It downloads the driver if it is not present on the WebDriverManager cache (~/.cache/selenium by default).
+			It exports the proper WebDriver Java environment variables required by Selenium (not done when using WebDriverManager from the CLI or as a Server). -->
+			
+		<dependency>
+		    <groupId>io.github.bonigarcia</groupId>
+		    <artifactId>webdrivermanager</artifactId>
+		    <version>3.8.1</version>
+		</dependency>
+		
+		<!-- Downloads all TESTNG JAR file and related classes , anotations 
+		Before That : Install TESTNG Software from Market place-->
+		
+		<dependency>
+		    <groupId>org.testng</groupId>
+		    <artifactId>testng</artifactId>
+		    <version>6.14.3</version>
+		    <scope>test</scope>
+		</dependency>
+
+ </dependencies>
+ 
+
+</project>
