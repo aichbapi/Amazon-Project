@@ -2,18 +2,18 @@
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="71752" started-at="2021-07-25T19:10:03Z" finished-at="2021-07-25T19:11:15Z">
+  <suite name="Suite" duration-ms="24644" started-at="2021-12-22T06:58:30Z" finished-at="2021-12-22T06:58:55Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="71752" started-at="2021-07-25T19:10:03Z" finished-at="2021-07-25T19:11:15Z">
+    <test name="Test" duration-ms="24644" started-at="2021-12-22T06:58:30Z" finished-at="2021-12-22T06:58:55Z">
       <class name="com.Amazon.com.TC01_ABC">
-        <test-method status="PASS" signature="checktest()[pri:1, instance:com.Amazon.com.TC01_ABC@641147d0]" name="checktest" duration-ms="71606" started-at="2021-07-25T19:10:03Z" finished-at="2021-07-25T19:11:15Z">
+        <test-method status="PASS" signature="checktest()[pri:1, instance:com.Amazon.com.TC01_ABC@641147d0]" name="checktest" duration-ms="24510" started-at="2021-12-22T06:58:30Z" finished-at="2021-12-22T06:58:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checktest -->
       </class> <!-- com.Amazon.com.TC01_ABC -->
       <class name="com.Amazon.com.TC02_ABC">
-        <test-method status="PASS" signature="checktest()[pri:0, instance:com.Amazon.com.TC02_ABC@3d3fcdb0]" name="checktest" duration-ms="42" started-at="2021-07-25T19:10:03Z" finished-at="2021-07-25T19:10:03Z">
+        <test-method status="PASS" signature="checktest()[pri:0, instance:com.Amazon.com.TC02_ABC@3d3fcdb0]" name="checktest" duration-ms="27" started-at="2021-12-22T06:58:30Z" finished-at="2021-12-22T06:58:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checktest -->

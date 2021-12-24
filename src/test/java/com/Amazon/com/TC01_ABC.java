@@ -5,8 +5,9 @@ import org.testng.annotations.Test;
 public class TC01_ABC {
 	
 	@Test(priority=1)
-	public void checktest() {
+	public void checktest() throws Exception {
 		Base.check();
+		Base.checkAgain();
 	}
 
 }
